@@ -70,13 +70,18 @@
     font-size: 18px;
     line-height: 150%;
 }
-
 .result-img {
-    width: 70vw;
+    max-width: 600px;
     display: block;
-    margin: 10px 15vw 10px 0;
+    margin: 10px auto;
 }
-
+@media screen and (max-width: 500px){
+    .result-img {
+        width: 85vw;
+        display: block;
+        margin: 10px 3vw 10px 0;
+    }
+}
 .reload-button {
     display: block;
     margin: 20px auto;
