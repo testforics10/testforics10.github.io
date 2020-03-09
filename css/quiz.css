@@ -72,9 +72,9 @@
 }
 
 .result-img {
-    width: 85vw;
+    width: 80vw;
     display: block;
-    margin: 10px 5vw 10px 0;
+    margin: 10px 15vw 10px 1px;
 }
 
 .reload-button {
