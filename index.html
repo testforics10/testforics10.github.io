@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/style.css" type="text/css" />
+    <title>WebControl</title>
+  </head>
+  <body>
+    <div class="leftboard">
+      <img class="mainbut" src="img/desligado.png" alt="" />
+      <div class="voltage">
+        <input class="voltrange" type="range" min="0" max="45" value="12" />
+        <p class="voltval">24 <span> V</span></p>
+        <svg>
+          <circle class="trans" cx="120" cy="120" r="100" />
+          <circle class="azul" cx="120" cy="120" r="100" />
+        </svg>
+        <p class="invol">Input Voltage</p>
+        <!-- <div id="contabutt">
+          <button class="automech">
+            <span class="halo" aria-hidden="true">
+              <span class="arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="cooler">
+        <img src="img/345r.png" id="helic" alt="" />
+        <input class="fanspeed" type="range" min="0" max="10" value="3" />
+        <p>Fan speed:<span> 100</span> rps</p>
+      </div>
+    </div>
+
+    <div class="rightboard">
+      <div class="rightvals">
+        <div class="freq">
+          <p id="frequence" class="centval">1000 <span> kHZ</span></p>
+          <svg>
+            <circle class="trans" cx="120" cy="120" r="100" />
+            <circle class="azul" cx="120" cy="120" r="100" />
+          </svg>
+          <p class="out">Output frequency</p>
+        </div>
+        <div class="outvolt">
+          <p id="voltas" class="centval">10 <span> kV</span></p>
+          <svg>
+            <circle class="trans" cx="120" cy="120" r="100" />
+            <circle class="azul" cx="120" cy="120" r="100" />
+          </svg>
+          <p class="out">Output voltage</p>
+        </div>
+      </div>
+      <div class="aniwave">
+        <img src="img/wave.gif" alt="" />
+      </div>
+      <div class="sensors">
+        <div class="room">
+          <svg>
+            <circle class="trans" cx="70" cy="70" r="50" />
+            <circle class="orange" cx="70" cy="70" r="50" />
+          </svg>
+          <div class="cel">
+            <h3>100<span> ℃</span></h3>
+            <p>Room temperature</p>
+          </div>
+        </div>
+        <div class="scheme">
+          <svg>
+            <circle class="trans" cx="70" cy="70" r="50" />
+            <circle class="orange" cx="70" cy="70" r="50" />
+          </svg>
+          <div class="cel">
+            <h3>100<span> ℃</span></h3>
+            <p>Scheme temperature</p>
+          </div>
+        </div>
+        <div class="prim">
+          <svg>
+            <circle class="trans" cx="70" cy="70" r="50" />
+            <circle class="orange" cx="70" cy="70" r="50" />
+          </svg>
+          <div class="cel">
+            <h3>100<span> ℃</span></h3>
+            <p>Primary coil temperature</p>
+          </div>
+        </div>
+        <div class="sec">
+          <svg>
+            <circle class="trans" cx="70" cy="70" r="50" />
+            <circle class="orange" cx="70" cy="70" r="50" />
+          </svg>
+          <div class="cel">
+            <h3>100<span> ℃</span></h3>
+            <p>Secondary coil temperature</p>
+          </div>
+        </div>
+        <div class="something">
+          <svg>
+            <circle class="trans" cx="70" cy="70" r="50" />
+            <circle class="orange" cx="70" cy="70" r="50" />
+          </svg>
+          <div class="cel">
+            <h3>100<span> ℃</span></h3>
+            <p>Something temperature</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
